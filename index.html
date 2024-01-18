@@ -17,6 +17,7 @@
                     colors: {
                         clifford: '#da373d',
                         'bike-primary': '#E76F51',
+                        'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
                         'bprimary-hover': '#cb5c40',
                     }
                 }
@@ -67,16 +68,24 @@
                     </ul>
                 </div>
                 <div class="">
-                    <a
-                        class="btn text-white text-xl leading-4 font-bold py-4 px-12 bg-bike-primary hover:bg-bprimary-hover">Login</a>
+                    <a class="btn text-white text-xl leading-4 font-bold py-4 px-12 bg-bike-primary hover:bg-bprimary-hover">Login</a>
                 </div>
             </div>
         </nav>
 
         <!-- slider  -->
-        <div class="carousel w-full">
+        <div class="carousel bg-bike-primary-bg w-full">
             <div id="slide1" class="carousel-item relative w-full">
-                <img src="images/slider/bike1.png" class="w-full" />
+                <div class="flex justify-between items-center">
+                    <div class="slider-content"
+                        <h1>Ride-on R15 V4 with Smile</h1>
+                        <p>Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+                        <button class="btn text-white text-xl leading-4 font-semibold py-4 px-6 bg-bike-primary hover:bg-bprimary-hover">Purchase</button>
+                    </div>
+                    <div class="slider-image">
+                        <img src="images/slider/bike1.png" class="w-full" />
+                    </div>
+                </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
