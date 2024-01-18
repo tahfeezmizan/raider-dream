@@ -8,42 +8,72 @@
     <!-- Tailwind and daisyUI CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': '#E76F51',
+                        'bprimary-hover': '#cb5c40',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom css styles -->
+    <style>
+        /*  google font  */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
+<body class="font-poppins">
+    <header class="md:container md:mx-auto px-4">
         <nav>
             <div class="navbar">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="text-xl">Raider Dream</a>
+                    <a class="text-4xl">Raider Dream</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="" href="#">Home</a></li>
-                    <li><a class="" href="#">Shop</a></li>
-                    <li><a class="" href="#">News</a></li>
-                    <li><a class="" href="#">Contact</a></li>
-                  </ul>
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a class="" href="#">Home</a></li>
+                        <li><a class="" href="#">Shop</a></li>
+                        <li><a class="" href="#">News</a></li>
+                        <li><a class="" href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn btn-error">Login</a>
+                <div class="">
+                    <a class="btn text-white text-xl leading-4 font-bold py-4 px-12 bg-bike-primary hover:bg-bprimary-hover">Login</a>
                 </div>
-              </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="md:container md:mx-auto px-4">
 
     </main>
 
